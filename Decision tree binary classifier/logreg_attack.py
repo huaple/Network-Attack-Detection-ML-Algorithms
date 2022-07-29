@@ -195,3 +195,45 @@ def logreg_sgd(X, y, alpha=.001, iters=100000, eps=1e-2, lamda=0.001):
 def predict_prob(X, theta):  # According to theory of logistic likelihood: probability
     return 1. / (1 + numpy.exp(-numpy.dot(X, theta)))
 
+
+def evaluate(y_test, y_prob):  # Evaluation, in accordance with theory of statics.
+    tpr = []
+    fpr = []
+    tp, fp, fn, tn = 0, 0, 0, 0  # true positive, false positive, false negative, true negative.
+    for index, i in enumerate(y_test):
+        j = index
+
+     #   print("y_prob:",y_prob[j])
+        round_prob=round(y_prob[j])
+        if (i == 1 and round_prob == 1):
+            tp = tp + 1
+        elif (i == 0 and round_prob == 1):
+            fp = fp + 1
+        elif (i == 1 and round_prob == 0):
+            fn = fn + 1
+        elif (i == 0 and round_prob == 0):
+            tn = tn + 1
+
+    # accuracy
+    correct = tp + tn
+    total = tp + fp + fn + tn
+    accuracy = correct / total
+
+    # precision
+    precision = tp / (tp + fp)
+
+    # recall
+    recall = tp / (tp + fn)
+
+    # f1_score
+    p = precision
+    r = recall
+
+    f1score = 2 * p * r / (p + r)
+
+    print("Accuracy: {0}".format(accuracy))
+    print("Precision: {0}".format(precision))
+    print("Recall: {0}".format(recall))
+    print("F1 Score: {0}".format(f1score))
+
+
