@@ -112,3 +112,52 @@ def error(xi, yi, theta):
 
 
 """evaluated error **2"""
+
+
+def squared_error(xi, yi, theta):
+    return error(xi, yi, theta) ** 2
+
+
+"""the gradient corresponding to the ith squared error term"""
+
+
+def squared_error_gradient(xi, yi, theta):
+    return [-2 * x_ij * error(xi, yi, theta)
+            for x_ij in xi]
+
+
+""" calculate ridge penalty"""
+
+
+def ridge_penalty(lamda, theta):
+    return lamda * numpy.dot(theta[1:], theta[1:]) / 2
+
+
+"""calculate ridge gradient simply"""
+
+
+def ridge_penalty_gradient(lamda, theta):
+    return [0] + [lamda * thetai for thetai in theta[1:]]
+
+
+def logreg_sgd(X, y, alpha=.001, iters=100000, eps=1e-2, lamda=0.001):
+    n, d = X.shape
+  #  print(n, d)
+    theta = numpy.zeros((d, 1))
+
+    random.seed(0)
+    theta = [random.random() for xi in X[0]]
+
+    gradient_fn = logistic_log_gradient_i
+    target_fn = logistic_log_likelihood_i  # target is to maximize likelihood value (approaching to zero)
+
+    data = zip(X, y)
+
+    alpha_0 = alpha  # a step length
+    max_theta, max_value = -Inf, -500000
+    counter_of_no_improve = 0  # counter
+    while counter_of_no_improve < iters:
+
+        log_likelihood_value = sum((target_fn(x_i, y_i, theta) + ridge_penalty(lamda, theta)) for x_i, y_i in
+                                   data) / n  # According to theory of logistic likelihood; add ridge_penalty to prevent from overfitting.
+        print(log_likelihood_value, max_value, max_theta, theta)  # print for processing verbosely
