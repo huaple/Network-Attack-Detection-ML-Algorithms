@@ -3,4 +3,7 @@
 """
 Created on Wed Aug 01 18:13:26 2018
 
-@au
+@author: Ke-Hsin, Lo
+"""
+
+import unicod
