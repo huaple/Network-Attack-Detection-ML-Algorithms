@@ -266,3 +266,15 @@ def main(argv):
 
     """training and get model"""
     theta = logreg_sgd(X_train_scale, y_train)
+
+    """result output"""
+    y_prob = predict_prob(X_train_scale, theta)
+    print("Logreg train accuracy: %f" % (sklearn.metrics.accuracy_score(y_train, y_prob > .5)))
+    y_prob = predict_prob(X_test_scale, theta)
+    print("Logreg test accuracy: %f" % (sklearn.metrics.accuracy_score(y_test, y_prob > .5)))
+
+    evaluate(y_test.flatten(), y_prob.flatten())
+    plot_roc_curve(y_test.flatten(), y_prob.flatten())
+
+if __name__ == "__main__":
+    main(sys.argv)
