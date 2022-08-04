@@ -8,4 +8,8 @@ Created on Wed Aug 01 18:13:26 2018
 
 import unicodecsv
 import random
-import ope
+import operator
+import math
+import numpy
+
+import
