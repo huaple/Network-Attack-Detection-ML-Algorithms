@@ -6,4 +6,6 @@ Created on Wed Aug 01 18:13:26 2018
 @author: Ke-Hsin, Lo
 """
 
-import unicod
+import unicodecsv
+import random
+import ope
