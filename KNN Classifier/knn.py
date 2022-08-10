@@ -14,4 +14,6 @@ import numpy
 
 import pandas as pd
 import sklearn.metrics
-import sklearn.model_select
+import sklearn.model_selection
+import sklearn.linear_model
+i
