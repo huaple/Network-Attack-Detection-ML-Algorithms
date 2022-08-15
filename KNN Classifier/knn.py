@@ -19,4 +19,6 @@ import sklearn.linear_model
 import sklearn.preprocessing
 import matplotlib.pyplot as plt
 
-# getdata() function definit
+# getdata() function definition
+def getdata(filename):
+    wi
