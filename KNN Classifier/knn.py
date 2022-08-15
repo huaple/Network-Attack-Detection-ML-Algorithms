@@ -21,4 +21,5 @@ import matplotlib.pyplot as plt
 
 # getdata() function definition
 def getdata(filename):
-    wi
+    with open(filename, 'rb') as f:
+    
