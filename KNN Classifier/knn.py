@@ -22,4 +22,4 @@ import matplotlib.pyplot as plt
 # getdata() function definition
 def getdata(filename):
     with open(filename, 'rb') as f:
-    
+        reader = unicodecsv.reader(f
