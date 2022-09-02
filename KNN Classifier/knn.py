@@ -28,3 +28,7 @@ def getdata(filename):
 
 
 
+
+def cosine_similarity(v1, v2):
+
+    sum_xx,
