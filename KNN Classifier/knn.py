@@ -31,4 +31,5 @@ def getdata(filename):
 
 def cosine_similarity(v1, v2):
 
-    sum_xx, sum_xy, sum_yy = 0.0, 0.0
+    sum_xx, sum_xy, sum_yy = 0.0, 0.0, 0.0
+ #   print "len: %d" %(len(v1)
