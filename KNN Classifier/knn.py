@@ -35,4 +35,5 @@ def cosine_similarity(v1, v2):
  #   print "len: %d" %(len(v1))
     for i in range(0, len(v1)-1):
  #       print (v1[i])
+        sum_xx += math.pow(float(v1[i]), 2)
     
