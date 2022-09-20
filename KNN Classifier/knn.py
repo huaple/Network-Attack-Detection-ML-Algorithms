@@ -41,4 +41,5 @@ def cosine_similarity(v1, v2):
 
     return sum_xy / math.sqrt(sum_xx * sum_yy)
 
-def cosin
+def cosine_distance(v1, v2):
+    1-cosi
