@@ -37,4 +37,6 @@ def cosine_similarity(v1, v2):
  #       print (v1[i])
         sum_xx += math.pow(float(v1[i]), 2)
         sum_xy += float(v1[i]) * float(v2[i])
-        sum_yy += math.po
+        sum_yy += math.pow(float(v2[i]), 2)
+
+    return sum_xy / m
