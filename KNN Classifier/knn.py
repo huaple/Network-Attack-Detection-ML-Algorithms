@@ -42,4 +42,6 @@ def cosine_similarity(v1, v2):
     return sum_xy / math.sqrt(sum_xx * sum_yy)
 
 def cosine_distance(v1, v2):
-    1-cosi
+    1-cosine_similarity(v1,v2)
+
+# KNN prediction an
