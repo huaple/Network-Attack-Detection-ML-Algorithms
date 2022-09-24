@@ -47,4 +47,4 @@ def cosine_distance(v1, v2):
 # KNN prediction and model training
 def knn_predict(test_data, train_data, k_value, category):
     totalcount = 0
-    for i in 
+    for i in test_data: #select tested data
