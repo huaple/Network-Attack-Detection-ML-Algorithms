@@ -44,4 +44,5 @@ def cosine_similarity(v1, v2):
 def cosine_distance(v1, v2):
     1-cosine_similarity(v1,v2)
 
-# KNN prediction an
+# KNN prediction and model training
+def knn_pred
