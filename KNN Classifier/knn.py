@@ -48,3 +48,4 @@ def cosine_distance(v1, v2):
 def knn_predict(test_data, train_data, k_value, category):
     totalcount = 0
     for i in test_data: #select tested data
+        cos_similarity_list = [] 
