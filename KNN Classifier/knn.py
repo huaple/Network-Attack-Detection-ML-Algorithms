@@ -51,4 +51,5 @@ def knn_predict(test_data, train_data, k_value, category):
         cos_similarity_list = [] # all distance array
 
         classNum=dict() #a dictionary of nebor
-        c
+        classNum['Normal'] = 0
+        
