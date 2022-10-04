@@ -53,4 +53,5 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum=dict() #a dictionary of nebor
         classNum['Normal'] = 0
         classNum['Reconnaissance'] = 0
-       
+        classNum['Exploits'] = 0
+        classN
