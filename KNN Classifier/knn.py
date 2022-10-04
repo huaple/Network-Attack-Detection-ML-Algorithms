@@ -54,4 +54,5 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum['Normal'] = 0
         classNum['Reconnaissance'] = 0
         classNum['Exploits'] = 0
-        classN
+        classNum['Fuzzers'] = 0
+        classNum['DoS'] = 0
