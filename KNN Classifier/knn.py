@@ -59,4 +59,5 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum['Generic'] = 0
         classNum['Shellcode'] = 0
         classNum['Analysis'] = 0
-   
+        classNum['Worms'] = 0
+  
