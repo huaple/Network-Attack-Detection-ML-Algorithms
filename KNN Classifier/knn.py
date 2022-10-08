@@ -56,4 +56,6 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum['Exploits'] = 0
         classNum['Fuzzers'] = 0
         classNum['DoS'] = 0
-        classNum['Generic'] = 
+        classNum['Generic'] = 0
+        classNum['Shellcode'] = 0
+    
