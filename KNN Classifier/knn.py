@@ -64,4 +64,4 @@ def knn_predict(test_data, train_data, k_value, category):
 
         jcount = 0
 
-        for j in tra
+        for j in train_data: # find in train data t
