@@ -60,4 +60,6 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum['Shellcode'] = 0
         classNum['Analysis'] = 0
         classNum['Worms'] = 0
-  
+        classNum['Backdoors'] = 0
+
+      
