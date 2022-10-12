@@ -62,4 +62,6 @@ def knn_predict(test_data, train_data, k_value, category):
         classNum['Worms'] = 0
         classNum['Backdoors'] = 0
 
-      
+        jcount = 0
+
+        for j in tra
