@@ -66,4 +66,5 @@ def knn_predict(test_data, train_data, k_value, category):
 
         for j in train_data: # find in train data to get the nearest point
        #     print "i: %s" %(i)
-            cos_sm = cosine_similarity(i
+            cos_sm = cosine_similarity(i, j)  #  1 test data  train set
+     
