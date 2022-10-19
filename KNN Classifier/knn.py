@@ -68,4 +68,4 @@ def knn_predict(test_data, train_data, k_value, category):
        #     print "i: %s" %(i)
             cos_sm = cosine_similarity(i, j)  #  1 test data  train set
             cos_similarity_list.append((category[jcount], cos_sm)) #the distance with the category
-#            print cos_similarity_list # just for debugging and observing; in
+#            print cos_similarity_list # just for debugging and observing; in general running, this line wil
