@@ -70,4 +70,5 @@ def knn_predict(test_data, train_data, k_value, category):
             cos_similarity_list.append((category[jcount], cos_sm)) #the distance with the category
 #            print cos_similarity_list # just for debugging and observing; in general running, this line will not be used.
             print "count: %s" %(jcount)
-            cos_similarity_list.sort(key=operator.itemgetter(1), reverse=True) #u
+            cos_similarity_list.sort(key=operator.itemgetter(1), reverse=True) #use cos piority
+            ''' simila
