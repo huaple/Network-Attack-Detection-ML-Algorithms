@@ -74,4 +74,4 @@ def knn_predict(test_data, train_data, k_value, category):
             ''' similarity priority list has been built; we can find the first k nearest neighbors '''
             jcount += 1
             totalcount += 1
-       
+            print "Processing: %s" % 
