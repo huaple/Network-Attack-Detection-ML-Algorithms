@@ -78,4 +78,5 @@ def knn_predict(test_data, train_data, k_value, category):
 
         knn = cos_similarity_list[:k_value]  # select first k neighbors
 
-      
+        print knn
+        for k in kn
