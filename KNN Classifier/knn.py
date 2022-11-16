@@ -76,4 +76,4 @@ def knn_predict(test_data, train_data, k_value, category):
             totalcount += 1
             print "Processing: %s" % (totalcount)
 
-        knn = c
+        knn = cos_similarity_list[:k_value]  # s
