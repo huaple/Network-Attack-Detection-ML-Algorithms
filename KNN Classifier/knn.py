@@ -80,4 +80,5 @@ def knn_predict(test_data, train_data, k_value, category):
 
         print knn
         for k in knn: #k[0] is the most simliar.
-            i
+            if k[0] == 'Normal':
+                classN
