@@ -82,4 +82,5 @@ def knn_predict(test_data, train_data, k_value, category):
         for k in knn: #k[0] is the most simliar.
             if k[0] == 'Normal':
                 classNum['Normal'] += 1
-            elif k[0] 
+            elif k[0] == 'Reconnaissance':
+                classNum['
