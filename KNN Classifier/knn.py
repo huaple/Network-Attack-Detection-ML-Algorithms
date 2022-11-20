@@ -84,4 +84,5 @@ def knn_predict(test_data, train_data, k_value, category):
                 classNum['Normal'] += 1
             elif k[0] == 'Reconnaissance':
                 classNum['Reconnaissance'] += 1
-            elif k[0
+            elif k[0] == 'Exploits':
+         
