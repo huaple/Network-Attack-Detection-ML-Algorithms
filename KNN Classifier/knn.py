@@ -90,4 +90,5 @@ def knn_predict(test_data, train_data, k_value, category):
                 classNum['Fuzzers'] += 1
             elif k[0] == 'DoS':
                 classNum['DoS'] += 1
- 
+            elif k[0] == 'Generic':
+        
