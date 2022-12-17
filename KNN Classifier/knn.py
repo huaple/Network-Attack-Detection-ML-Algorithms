@@ -91,4 +91,5 @@ def knn_predict(test_data, train_data, k_value, category):
             elif k[0] == 'DoS':
                 classNum['DoS'] += 1
             elif k[0] == 'Generic':
-                classNum['Generic'] += 
+                classNum['Generic'] += 1
+            elif k[0] == 'Shellcode':
