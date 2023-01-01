@@ -102,4 +102,4 @@ def knn_predict(test_data, train_data, k_value, category):
                 classNum['Backdoors'] += 1
 
     
-#        print  "result: %d %d %d %d %d" %(classNum['Norma
+#        print  "result: %d %d %d %d %d" %(classNum['Normal'],  classNum['Reconnaissance'], class
