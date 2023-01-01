@@ -99,4 +99,4 @@ def knn_predict(test_data, train_data, k_value, category):
             elif k[0] == 'Worms':
                 classNum['Worms'] += 1
             elif k[0] == 'Backdoors':
-                cl
+                classNum['Backdoors'] += 1
