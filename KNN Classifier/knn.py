@@ -100,3 +100,6 @@ def knn_predict(test_data, train_data, k_value, category):
                 classNum['Worms'] += 1
             elif k[0] == 'Backdoors':
                 classNum['Backdoors'] += 1
+
+    
+#        print  "resul
