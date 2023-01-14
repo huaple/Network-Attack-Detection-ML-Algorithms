@@ -103,4 +103,5 @@ def knn_predict(test_data, train_data, k_value, category):
 
     
 #        print  "result: %d %d %d %d %d" %(classNum['Normal'],  classNum['Reconnaissance'], classNum['Exploits'], classNum['Fuzzers'], classNum['DoS'])
-        max_value = max(classNum, key=classNu
+        max_value = max(classNum, key=classNum.get) # max(classNum)
+       
