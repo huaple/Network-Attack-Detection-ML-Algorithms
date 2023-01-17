@@ -109,4 +109,5 @@ def knn_predict(test_data, train_data, k_value, category):
     #    recover_key(classNum, max_value)
 
  #       max_index = recover_key(classNum, max_value)
- #       pri
+ #       print "max_index %s" %(max_index)
+        i.app
