@@ -110,4 +110,6 @@ def knn_predict(test_data, train_data, k_value, category):
 
  #       max_index = recover_key(classNum, max_value)
  #       print "max_index %s" %(max_index)
-        i.append(max_value) # append predict
+        i.append(max_value) # append prediction; tag category
+
+def recover_key(dic
