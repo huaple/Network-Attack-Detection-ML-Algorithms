@@ -113,4 +113,5 @@ def knn_predict(test_data, train_data, k_value, category):
         i.append(max_value) # append prediction; tag category
 
 def recover_key(dictionary, value):
-     for a_key in 
+     for a_key in dictionary.keys():
+         i
