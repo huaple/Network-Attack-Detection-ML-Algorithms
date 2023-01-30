@@ -115,4 +115,6 @@ def knn_predict(test_data, train_data, k_value, category):
 def recover_key(dictionary, value):
      for a_key in dictionary.keys():
          if (dictionary[a_key] == value):
- 
+             return a_key
+
+# Accu
