@@ -118,4 +118,5 @@ def recover_key(dictionary, value):
              return a_key
 
 # Accuracy calculation function
-def a
+def accuracy(test_data, true_result):
+    
