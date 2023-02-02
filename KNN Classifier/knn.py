@@ -117,4 +117,5 @@ def recover_key(dictionary, value):
          if (dictionary[a_key] == value):
              return a_key
 
-# Accu
+# Accuracy calculation function
+def a
