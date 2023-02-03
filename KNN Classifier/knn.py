@@ -122,4 +122,6 @@ def accuracy(test_data, true_result):
     correct = 0
     for i in test_data:
         #print len(i)
-       
+        #print i[len(i)-1]
+
+        jcount
