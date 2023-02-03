@@ -120,4 +120,6 @@ def recover_key(dictionary, value):
 # Accuracy calculation function
 def accuracy(test_data, true_result):
     correct = 0
-    for i in test_data
+    for i in test_data:
+        #print len(i)
+       
