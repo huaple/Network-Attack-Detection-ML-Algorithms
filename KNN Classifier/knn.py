@@ -126,4 +126,7 @@ def accuracy(test_data, true_result):
 
         jcount = 0
         if true_result[jcount] == i[len(i)-1]:
-            correct +
+            correct += 1
+            jcount+=1
+
+    accu
