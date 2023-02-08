@@ -129,4 +129,5 @@ def accuracy(test_data, true_result):
             correct += 1
             jcount+=1
 
-    accuracy = float(correct) / len(test_d
+    accuracy = float(correct) / len(test_data) * 100  # accuracy
+    return accura
