@@ -130,4 +130,7 @@ def accuracy(test_data, true_result):
             jcount+=1
 
     accuracy = float(correct) / len(test_data) * 100  # accuracy
-    return accura
+    return accuracy
+
+
+def KNN(K, train_x, train_y, test_x, 
