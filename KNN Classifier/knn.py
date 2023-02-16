@@ -133,4 +133,5 @@ def accuracy(test_data, true_result):
     return accuracy
 
 
-def KNN(K, train_x, train_y, test_x, 
+def KNN(K, train_x, train_y, test_x, test_y):
+   # dataset = getdata('UNSW
