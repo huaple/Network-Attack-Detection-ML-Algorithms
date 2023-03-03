@@ -136,4 +136,7 @@ def accuracy(test_data, true_result):
 def KNN(K, train_x, train_y, test_x, test_y):
    # dataset = getdata('UNSW_NB15_training-set_selected.csv')  # getdata function call with csv file as parameter
 #    print len(dataset)
- #   train_dataset, test_dataset = shuffle(dataset)  # train test data spli
+ #   train_dataset, test_dataset = shuffle(dataset)  # train test data split
+  #  K = 3  # Assumed K value
+
+    t
