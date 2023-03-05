@@ -139,4 +139,5 @@ def KNN(K, train_x, train_y, test_x, test_y):
  #   train_dataset, test_dataset = shuffle(dataset)  # train test data split
   #  K = 3  # Assumed K value
 
-    t
+    train_dataset = train_x.tolist()
+    p
