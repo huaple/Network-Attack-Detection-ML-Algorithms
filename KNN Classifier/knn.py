@@ -140,4 +140,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
   #  K = 3  # Assumed K value
 
     train_dataset = train_x.tolist()
-    p
+    print "Number of training X: 
