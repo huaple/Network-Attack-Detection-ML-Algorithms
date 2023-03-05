@@ -141,4 +141,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
 
     train_dataset = train_x.tolist()
     print "Number of training X: %s" %len(train_dataset)
-    pr
+    print "Number of training Y:
