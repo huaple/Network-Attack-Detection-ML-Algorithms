@@ -146,4 +146,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
     print "Number of testing X: %s" %len(test_dataset)
 
     print "Training Set KNN Process:"
-    knn_predict(tra
+    knn_predict(train_dataset, train_dataset, K, 
