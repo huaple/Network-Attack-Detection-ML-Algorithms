@@ -147,4 +147,5 @@ def KNN(K, train_x, train_y, test_x, test_y):
 
     print "Training Set KNN Process:"
     knn_predict(train_dataset, train_dataset, K, train_y)
-    print "Testing Set KNN Process
+    print "Testing Set KNN Process:"
+    knn_predict(test_dataset, 
