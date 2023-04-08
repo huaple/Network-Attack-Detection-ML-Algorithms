@@ -151,4 +151,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
     knn_predict(test_dataset, train_dataset, K, train_y)
     atrain = round(accuracy(train_dataset, train_y),5)
     TrainError = float(100.00000- float(atrain))
-    at
+    atest = round(accuracy(test_d
