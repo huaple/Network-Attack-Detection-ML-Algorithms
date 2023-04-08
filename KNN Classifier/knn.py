@@ -150,4 +150,5 @@ def KNN(K, train_x, train_y, test_x, test_y):
     print "Testing Set KNN Process:"
     knn_predict(test_dataset, train_dataset, K, train_y)
     atrain = round(accuracy(train_dataset, train_y),5)
-    TrainError = floa
+    TrainError = float(100.00000- float(atrain))
+    at
