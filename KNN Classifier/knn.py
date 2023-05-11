@@ -153,4 +153,5 @@ def KNN(K, train_x, train_y, test_x, test_y):
     TrainError = float(100.00000- float(atrain))
     atest = round(accuracy(test_dataset, test_y),5)
     TestError = 100.00000- atest
-    # pr
+    # print test_dataset
+    print "Accuracy of train_
