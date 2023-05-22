@@ -155,4 +155,5 @@ def KNN(K, train_x, train_y, test_x, test_y):
     TestError = 100.00000- atest
     # print test_dataset
     print "Accuracy of train_dataset : ", atrain
-    print "Tr
+    print "Train error : ", TrainError
+    print "Accuracy of
