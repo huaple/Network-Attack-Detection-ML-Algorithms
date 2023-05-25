@@ -161,4 +161,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
     return TrainError, TestError, atrain, atest
 
 def load_train_data(train_ratio=0.12):
-  
+    data = pd.read_csv('./UNSW_
