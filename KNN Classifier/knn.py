@@ -162,4 +162,4 @@ def KNN(K, train_x, train_y, test_x, test_y):
 
 def load_train_data(train_ratio=0.12):
     data = pd.read_csv('./UNSW_NB15_training-set_selected.csv', header=None,
-           
+                       names=['x%i' % 
