@@ -166,4 +166,6 @@ def load_train_data(train_ratio=0.12):
     Xt = numpy.asarray(data[['x%i' % (i) for i in range(33)]])
     yt = numpy.asarray(data['y'])
 
-    return sklearn.model_selection.train_test_split(Xt, yt, test_
+    return sklearn.model_selection.train_test_split(Xt, yt, test_size=1 - train_ratio, random_state=0)
+
+
