@@ -169,3 +169,4 @@ def load_train_data(train_ratio=0.12):
     return sklearn.model_selection.train_test_split(Xt, yt, test_size=1 - train_ratio, random_state=0)
 
 
+def load_test_data(train_ratio=0.
