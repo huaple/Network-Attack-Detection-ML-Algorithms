@@ -170,4 +170,5 @@ def load_train_data(train_ratio=0.12):
 
 
 def load_test_data(train_ratio=0.88):
-    data = pd.read_csv('./UNSW_NB15_testing-set_selected.csv', heade
+    data = pd.read_csv('./UNSW_NB15_testing-set_selected.csv', header=None,
+                       names
