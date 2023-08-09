@@ -172,4 +172,4 @@ def load_train_data(train_ratio=0.12):
 def load_test_data(train_ratio=0.88):
     data = pd.read_csv('./UNSW_NB15_testing-set_selected.csv', header=None,
                        names=['x%i' % (i) for i in range(33)] + ['logic']+['y'])
-    Xtt = numpy.asarray(data[
+    Xtt = numpy.asarray(data[['x%i' % (i) for i in range(3
