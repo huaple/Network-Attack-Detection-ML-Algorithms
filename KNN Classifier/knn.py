@@ -177,4 +177,5 @@ def load_test_data(train_ratio=0.88):
     return sklearn.model_selection.train_test_split(Xtt, ytt, test_size=1 - train_ratio, random_state=0)
 
 def scale_features(X_train, X_test, low=0, upp=1):
-    minmax_scaler = sklearn.preprocessing.MinMaxScaler(feature_range=(low, upp)).fit(numpy.vstack((X_t
+    minmax_scaler = sklearn.preprocessing.MinMaxScaler(feature_range=(low, upp)).fit(numpy.vstack((X_train
+                                          
