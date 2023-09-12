@@ -178,4 +178,4 @@ def load_test_data(train_ratio=0.88):
 
 def scale_features(X_train, X_test, low=0, upp=1):
     minmax_scaler = sklearn.preprocessing.MinMaxScaler(feature_range=(low, upp)).fit(numpy.vstack((X_train
-                                                                                                )))  # Transforms features by scaling each feature to a given range(0~1
+                                                                                                )))  # Transforms features by scaling each feature to a given range(0~1) in order to reinforce dataset 
