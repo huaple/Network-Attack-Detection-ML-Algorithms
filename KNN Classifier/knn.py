@@ -181,4 +181,6 @@ def scale_features(X_train, X_test, low=0, upp=1):
                                                                                                 )))  # Transforms features by scaling each feature to a given range(0~1) in order to reinforce dataset and fit training set.
     X_train_scale = minmax_scaler.transform(X_train)
     X_test_scale = minmax_scaler.transform(X_test)
-    return X_train_scale, X_test_sc
+    return X_train_scale, X_test_scale
+
+"""preprocessing x and
