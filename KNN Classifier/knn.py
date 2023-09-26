@@ -183,4 +183,5 @@ def scale_features(X_train, X_test, low=0, upp=1):
     X_test_scale = minmax_scaler.transform(X_test)
     return X_train_scale, X_test_scale
 
-"""preprocessing x and
+"""preprocessing x and y of training data"""
+x_train2, t1, 
