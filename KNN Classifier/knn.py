@@ -184,4 +184,5 @@ def scale_features(X_train, X_test, low=0, upp=1):
     return X_train_scale, X_test_scale
 
 """preprocessing x and y of training data"""
-x_train2, t1, y_train, t2 = load_train_data(tra
+x_train2, t1, y_train, t2 = load_train_data(train_ratio=0.003) #1
+"""preproces
