@@ -189,4 +189,4 @@ x_train2, t1, y_train, t2 = load_train_data(train_ratio=0.003) #1
 t3, X_test, t4, y_test = load_test_data(train_ratio=(1-0.003)) #2
 
 """scale X dataset"""
-X_train_scale, X_test_sc
+X_train_scale, X_test_scale = scale_features(x_train2, X_test, 0
