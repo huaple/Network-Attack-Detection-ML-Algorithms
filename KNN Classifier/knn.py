@@ -188,4 +188,5 @@ x_train2, t1, y_train, t2 = load_train_data(train_ratio=0.003) #1
 """preprocessing x and y of testing data"""
 t3, X_test, t4, y_test = load_test_data(train_ratio=(1-0.003)) #2
 
-"""scale X datas
+"""scale X dataset"""
+X_train_scale, X_test_sc
