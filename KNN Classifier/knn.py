@@ -193,4 +193,5 @@ X_train_scale, X_test_scale = scale_features(x_train2, X_test, 0, 1)
 TrainError = []
 TestError = []
 TrainAccuracy = []
-TestAccurac
+TestAccuracy = []
+plt.figure(2
