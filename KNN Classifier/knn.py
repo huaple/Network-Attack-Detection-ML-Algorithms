@@ -194,4 +194,6 @@ TrainError = []
 TestError = []
 TrainAccuracy = []
 TestAccuracy = []
-plt.figure(2
+plt.figure(2)
+ax1 = plt.subplot(211)
+ax2 = p
