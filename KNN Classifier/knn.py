@@ -196,4 +196,6 @@ TrainAccuracy = []
 TestAccuracy = []
 plt.figure(2)
 ax1 = plt.subplot(211)
-ax2 = p
+ax2 = plt.subplot(212)
+plt.figure(3)
+bx1 = p
