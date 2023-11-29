@@ -198,4 +198,5 @@ plt.figure(2)
 ax1 = plt.subplot(211)
 ax2 = plt.subplot(212)
 plt.figure(3)
-bx1 = p
+bx1 = plt.subplot(311)
+bx2 = plt.s
