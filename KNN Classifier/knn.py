@@ -202,4 +202,4 @@ bx1 = plt.subplot(311)
 bx2 = plt.subplot(312)
 x = []
 
-'''knn start: for smal
+'''knn start: for small sample, start from 1; this from 9 is 
