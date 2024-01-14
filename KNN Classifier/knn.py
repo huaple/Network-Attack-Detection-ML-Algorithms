@@ -204,3 +204,5 @@ x = []
 
 '''knn start: for small sample, start from 1; this from 9 is for this big sample set. Because there are same similarity in diffrent kind.'''
 for k in range(13,3,-1): #3
+    print "K: %d" %(k)
+    T
