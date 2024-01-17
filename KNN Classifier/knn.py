@@ -206,4 +206,5 @@ x = []
 for k in range(13,3,-1): #3
     print "K: %d" %(k)
     TrainErrorTemp, TestErrorTemp, AoTrain, AoTest = KNN(k, x_train2, y_train, X_test, y_test)
-    TrainError.append(Trai
+    TrainError.append(TrainErrorTemp)
+    TestError.appen
