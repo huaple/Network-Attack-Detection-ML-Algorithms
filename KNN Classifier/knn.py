@@ -208,4 +208,5 @@ for k in range(13,3,-1): #3
     TrainErrorTemp, TestErrorTemp, AoTrain, AoTest = KNN(k, x_train2, y_train, X_test, y_test)
     TrainError.append(TrainErrorTemp)
     TestError.append(TestErrorTemp)
-    TrainAccurac
+    TrainAccuracy.append(AoTrain)
+    TestAccuracy.append( AoTest)
