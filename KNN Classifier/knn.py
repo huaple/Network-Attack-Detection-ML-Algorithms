@@ -211,4 +211,8 @@ for k in range(13,3,-1): #3
     TrainAccuracy.append(AoTrain)
     TestAccuracy.append( AoTest)
     print " "
-    x.app
+    x.append(k)
+
+
+plt.sca(ax1)
+plt.plot
