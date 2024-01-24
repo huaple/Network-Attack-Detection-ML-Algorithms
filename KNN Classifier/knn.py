@@ -210,3 +210,5 @@ for k in range(13,3,-1): #3
     TestError.append(TestErrorTemp)
     TrainAccuracy.append(AoTrain)
     TestAccuracy.append( AoTest)
+    print " "
+    x.app
