@@ -215,4 +215,8 @@ for k in range(13,3,-1): #3
 
 
 plt.sca(ax1)
-plt.plot
+plt.plot(x, TrainError)
+
+
+plt.sca(ax2)
+pl
