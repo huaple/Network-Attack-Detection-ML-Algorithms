@@ -219,4 +219,8 @@ plt.plot(x, TrainError)
 
 
 plt.sca(ax2)
-pl
+plt.plot(x, TestError)
+
+
+plt.sca(bx1)
+plt.plo
