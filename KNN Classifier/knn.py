@@ -223,4 +223,7 @@ plt.plot(x, TestError)
 
 
 plt.sca(bx1)
-plt.plo
+plt.plot(x, TrainAccuracy)
+
+
+plt.s
