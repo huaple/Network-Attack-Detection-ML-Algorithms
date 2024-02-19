@@ -232,4 +232,5 @@ plt.plot(x, TestAccuracy)
 
 plt.xlabel('x axis') # make axis labels
 plt.ylabel('y axis')
-plt.show
+plt.show()
+
