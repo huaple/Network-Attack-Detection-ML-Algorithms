@@ -230,3 +230,5 @@ plt.sca(bx2)
 plt.plot(x, TestAccuracy)
 
 
+plt.xlabel('x axis') # make axis labels
+plt
