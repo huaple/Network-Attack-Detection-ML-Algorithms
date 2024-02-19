@@ -47,3 +47,35 @@ def scale_features(X_train, X_test, low=0, upp=1):
 
 
 def logistic(x):
+    return 1.0 / (1 + math.exp(-x))
+
+
+def logistic_derivative(x):
+    return logistic(x) * (1 - logistic(x))
+
+
+def logistic_log_likelihood_i(x_i, y_i, theta):  # 0/1 : logL= y * logf + (1-y) * log(1-f)
+    if y_i == 1.0:
+        return math.log(logistic(numpy.dot(x_i, theta)))
+    else:
+        return math.log(1 - logistic(numpy.dot(x_i, theta)))
+
+
+def logistic_log_likelihood(x, y, beta):
+    return sum(logistic_log_likelihood_i(x_i, y_i, beta)
+               for x_i, y_i in zip(x, y))
+
+
+"""i is the index of the data point;
+   j the index of the derivative"""
+
+
+def logistic_log_partial_ij(x_i, yi, theta, j):    #calculate gives the gradient
+
+    return (yi - logistic(numpy.dot(x_i, theta))) * x_i[j]
+
+    """the gradient of the log likelihood
+    corresponding to the i-th data point"""
+
+
+def logistic_log_gradient_i(xi, yi, theta):   #calcaulate its it partial derivative by treating it as a function of just its ith variable, holding the o ther variable fixed
