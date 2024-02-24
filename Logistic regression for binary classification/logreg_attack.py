@@ -79,3 +79,36 @@ def logistic_log_partial_ij(x_i, yi, theta, j):    #calculate gives the gradient
 
 
 def logistic_log_gradient_i(xi, yi, theta):   #calcaulate its it partial derivative by treating it as a function of just its ith variable, holding the o ther variable fixed
+    return [logistic_log_partial_ij(xi, yi, theta, j)
+            for j, _ in enumerate(theta)]
+
+
+def logistic_log_gradient(x, y, beta):
+    return reduce(vector_add,
+                  [logistic_log_gradient_i(x_i, y_i, beta)
+                   for x_i, y_i in zip(x, y)])
+
+
+"""adds two vectors"""
+
+
+def vector_add(v, w):
+    return [v_i + w_i for v_i, w_i in zip(v, w)]
+
+
+"""scalar number multiplies vector ver 2; same as ver 1"""
+
+
+def scalar_multiply_2(c, v):
+    row = []
+
+    row = numpy.asarray(c) * v
+
+    return row
+
+
+def error(xi, yi, theta):
+    return yi - predict_prob(xi, theta)
+
+
+"""evaluated error **2"""
