@@ -150,3 +150,41 @@ def logreg_sgd(X, y, alpha=.001, iters=100000, eps=1e-2, lamda=0.001):
 
     gradient_fn = logistic_log_gradient_i
     target_fn = logistic_log_likelihood_i  # target is to maximize likelihood value (approaching to zero)
+
+    data = zip(X, y)
+
+    alpha_0 = alpha  # a step length
+    max_theta, max_value = -Inf, -500000
+    counter_of_no_improve = 0  # counter
+    while counter_of_no_improve < iters:
+
+        log_likelihood_value = sum((target_fn(x_i, y_i, theta) + ridge_penalty(lamda, theta)) for x_i, y_i in
+                                   data) / n  # According to theory of logistic likelihood; add ridge_penalty to prevent from overfitting.
+        print(log_likelihood_value, max_value, max_theta, theta)  # print for processing verbosely
+        if log_likelihood_value > max_value:  # if value bigger, it was improved.
+            print("Likelihood Improved.")
+            if abs(log_likelihood_value - max_value) < eps:  # once training finished, response the maximum theta.
+                print("Target Minimum eps Achieved( < 1e-2 ): ", abs(log_likelihood_value - max_value))
+                max_theta, max_value = theta, log_likelihood_value
+                return max_theta
+            else:
+                print("eps: ", abs(log_likelihood_value - max_value))  # if not smaller than eps, continue training.
+
+                """if find a new maximum, renew the value, and initialize the alpha, which is the walking length."""
+            max_theta, max_value = theta, log_likelihood_value  # save the newest theta as max_theta for return the output and further training
+            counter_of_no_improve = 0
+            alpha = alpha_0
+        else:
+            """if it was not improved, narrow the walking length and try to walk next step(shrink the step size)."""
+            counter_of_no_improve += 1
+            print("Not improved. iter of Narrow the Step Length: ", counter_of_no_improve)
+            alpha *= 0.9
+
+
+        for xi, yi in data:
+           gradient_i = gradient_fn(xi, yi, theta) + ridge_penalty_gradient(lamda, theta)  # calculate gradient
+
+           theta = vector_add(theta, scalar_multiply_2(alpha, gradient_i))  # take a step
+
+    # if training so many time and over the iterator number, finish training.
+    theta = max_theta
