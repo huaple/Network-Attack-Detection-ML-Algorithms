@@ -221,3 +221,47 @@ def evaluate(y_test, y_prob):  # Evaluation, in accordance with theory of static
 
     # precision
     precision = tp / (tp + fp)
+
+    # recall
+    recall = tp / (tp + fn)
+
+    # f1_score
+    p = precision
+    r = recall
+
+    f1score = 2 * p * r / (p + r)
+
+    print("Accuracy: {0}".format(accuracy))
+    print("Precision: {0}".format(precision))
+    print("Recall: {0}".format(recall))
+    print("F1 Score: {0}".format(f1score))
+
+
+
+def plot_roc_curve(y_test, y_prob):
+    # compute tpr and fpr of different thresholds
+    tpr = []
+    fpr = []
+    plt.plot(fpr, tpr)
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title('ROC ')
+    plt.xlim(0,1)
+    plt.ylim(0,1)
+    plt.gca().set_aspect('equal', adjustable='box')
+    fpr, tpr, thh = sklearn.metrics.roc_curve(y_test, y_prob, 1)
+    plt.plot(fpr, tpr, color='green', marker='o', linestyle='solid')
+    plt.savefig("roc_curve.png")
+    plt.show()
+
+def main(argv):
+    """data preprocessing"""
+
+    """preprocessing x and y of training data"""
+    x_train2, t1, y_train, t2 = load_train_data(train_ratio=0.99)
+    """preprocessing x and y of testing data"""
+    t3, X_test, t4, y_test = load_test_data(train_ratio=0.01)
+    """scale X dataset"""
+    X_train_scale, X_test_scale = scale_features(x_train2, X_test, 0, 1)
+
+    """training and get model"""
