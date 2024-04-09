@@ -3,4 +3,5 @@ This project is focused on constructing detection models for classifying network
 
 The details of the UNSW-NB15 data set as used in this project are detailed in the following papers:
 
-Moustafa, Nour, and Jill Slay. "UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set)."Military Communications and Information Systems Conference (MilCIS), 2
+Moustafa, Nour, and Jill Slay. "UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set)."Military Communications and Information Systems Conference (MilCIS), 2015. IEEE, 2015.
+Moustafa
